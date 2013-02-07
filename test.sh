@@ -6,7 +6,8 @@ INPUT=$3
 OUTPUT=$4
 
 
-TEMP_FILTER="./filter"
+TEMP_FILTER=`mktemp -d`
+rm -rf ${TEMP_FILTER}
 TEMP_OUT=${TEMP_FILTER}/out
 
 
